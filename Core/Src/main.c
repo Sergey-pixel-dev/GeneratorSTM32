@@ -626,8 +626,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
       return;
     }
-    if (StateParamsError && !IsExternalSource)
-      return;
+    /* if (StateParamsError && !IsExternalSource)
+      return; */
 
     // Обработка кнопок вверх вниз
 

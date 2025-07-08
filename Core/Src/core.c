@@ -215,7 +215,10 @@ void CoreInit(
 void CheckParameters()
 {
     if (HZRequestNum == 0)
+    {
+        StateParamsError = false;
         return;
+    }
 
     StateParamsError = !((INRequestNum > (MIN_DELAY + HERequestNum / 10 + 1)) && (INRequestNum <= 900) && (INRequestNum < 500000 / HZRequestNum) && (HERequestNum / 10 < SYNC_DELAY) && (LERequestNum / 10 < SYNC_DELAY));
 }
