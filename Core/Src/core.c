@@ -67,6 +67,8 @@ void UpdateExternalSource()
     {
         StopTimers();
     }
+    // ставлю внешний триггер для тим2
+    TIM2->SMCR = (TIM2->SMCR & ~TIM_SMCR_TS) | TIM_TS_ETRF;
     UpdateHZScreen();
     UpdateScreenPlaceNumber();
 }
@@ -75,6 +77,7 @@ void SetExternalSource()
 {
     NVIC_EnableIRQ(EXTI0_IRQn);
     NVIC_EnableIRQ(TIM3_IRQn);
+
     if (State == HZ)
     {
         State++;
@@ -93,8 +96,8 @@ void UnsetExternalSource()
     TIM3->CR1 = ~TIM_CR1_CEN;
     TIM3->CNT = 0;
     TIM3->SR = 0;
-    // если частота была нулевая, забьем ее нормальной частотой
-    // FreqArray[0] = {48, 48, 48, 49};
+    // убираем тригер по ETR который был
+    TIM2->SMCR = (TIM2->SMCR & ~TIM_SMCR_TS) | TIM_TS_ITR0;
     foo2();
 }
 
@@ -326,7 +329,7 @@ void SetHE()
     else
     {
         phtim2->Instance->CNT = 0;
-        phtim2->Instance->CCR1 = 72 * SYNC_DELAY - 72 * (HERequestNum / 10) - fraction_ticks[HERequestNum % 10];
+        phtim2->Instance->CCR3 = 72 * SYNC_DELAY - 72 * (HERequestNum / 10) - fraction_ticks[HERequestNum % 10];
         // TIM2->CCER |= (TIM_CCER_CC1E | TIM_CCER_CC2E);
     }
 }
@@ -339,7 +342,7 @@ void SetINandLE()
     else
     {
         phtim4->Instance->CNT = 0;
-        phtim4->Instance->ARR = 72 * INRequestNum + 72 * (LERequestNum / 10) + fraction_ticks[HERequestNum % 10] - 1 - 72 * SYNC_DELAY + phtim2->Instance->CCR1;
+        phtim4->Instance->ARR = 72 * INRequestNum + 72 * (LERequestNum / 10) + fraction_ticks[HERequestNum % 10] - 1 - 72 * SYNC_DELAY + phtim2->Instance->CCR3;
         phtim4->Instance->CCR1 = phtim4->Instance->ARR - 72 * (LERequestNum / 10) - fraction_ticks[HERequestNum % 10] - 1;
         phtim4->Instance->CCR2 = phtim4->Instance->ARR - 72 * SYNC_DELAY;
         // TIM4->CCER |= (TIM_CCER_CC1E | TIM_CCER_CC2E);
