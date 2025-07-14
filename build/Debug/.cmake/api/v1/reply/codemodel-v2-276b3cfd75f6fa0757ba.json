@@ -30,35 +30,29 @@
 						"string" : "3.22"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 1,
-					"source" : "cmake/stm32cubemx"
+					"projectIndex" : 0,
+					"source" : "cmake/stm32cubemx",
+					"targetIndexes" : 
+					[
+						1
+					]
 				}
 			],
 			"name" : "Debug",
 			"projects" : 
 			[
 				{
-					"childIndexes" : 
-					[
-						1
-					],
 					"directoryIndexes" : 
 					[
-						0
+						0,
+						1
 					],
 					"name" : "Gen",
 					"targetIndexes" : 
 					[
-						0
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
+						0,
 						1
-					],
-					"name" : "stm32cubemx",
-					"parentIndex" : 0
+					]
 				}
 			],
 			"targets" : 
@@ -66,8 +60,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Gen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Gen-Debug-5708dc1b76a04ed68731.json",
+					"jsonFile" : "target-Gen-Debug-de1b70c9f812768ca263.json",
 					"name" : "Gen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "STM32_Drivers::@768a070a0fe75716b479",
+					"jsonFile" : "target-STM32_Drivers-Debug-5e9caecb2c8cb48fdbe8.json",
+					"name" : "STM32_Drivers",
 					"projectIndex" : 0
 				}
 			]

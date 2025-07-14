@@ -60,7 +60,7 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 
 /* USER CODE BEGIN Private defines */
-#define DEBOUNCE_DELAY 500
+#define DEBOUNCE_DELAY 700
 #define DEBOUNCE_DELAY_2 360
 
 /* USER CODE END Private defines */

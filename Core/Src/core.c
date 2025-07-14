@@ -342,8 +342,8 @@ void SetINandLE()
     else
     {
         phtim4->Instance->CNT = 0;
-        phtim4->Instance->ARR = 72 * INRequestNum + 72 * (LERequestNum / 10) + fraction_ticks[HERequestNum % 10] - 1 - 72 * SYNC_DELAY + phtim2->Instance->CCR3;
-        phtim4->Instance->CCR1 = phtim4->Instance->ARR - 72 * (LERequestNum / 10) - fraction_ticks[HERequestNum % 10] - 1;
+        phtim4->Instance->ARR = 72 * INRequestNum + 72 * (LERequestNum / 10) + fraction_ticks[LERequestNum % 10] - 1 - 72 * SYNC_DELAY + phtim2->Instance->CCR3;
+        phtim4->Instance->CCR1 = phtim4->Instance->ARR - 72 * (LERequestNum / 10) - fraction_ticks[LERequestNum % 10] - 1;
         phtim4->Instance->CCR2 = phtim4->Instance->ARR - 72 * SYNC_DELAY;
         // TIM4->CCER |= (TIM_CCER_CC1E | TIM_CCER_CC2E);
     }
@@ -397,7 +397,7 @@ void LaunchTimers(void)
     // TIM2 Channels 1 и 2
     if (HERequestNum != 0)
     {
-        TIM2->CCER |= (TIM_CCER_CC1E | TIM_CCER_CC2E); // Включить выходы каналов 1 и 2
+        TIM2->CCER |= (TIM_CCER_CC2E | TIM_CCER_CC3E); // Включить выходы каналов 2 и 3
         TIM2->CR1 |= TIM_CR1_CEN;                      // Запустить таймер TIM2
     }
     // TIM4 Channels 1 и 2
@@ -414,8 +414,8 @@ void StopTimers(void)
     // TIM1 Channel 2
     TIM1->CCER &= ~TIM_CCER_CC2E; // Выключить выход канала 2
 
-    // TIM2 Channels 1 и 2
-    TIM2->CCER &= ~(TIM_CCER_CC1E | TIM_CCER_CC2E); // Выключить выходы каналов 1 и 2
+    // TIM2 Channels 2 и 3
+    TIM2->CCER &= ~(TIM_CCER_CC2E | TIM_CCER_CC3E); // Выключить выходы каналов 2 и 3
 
     // TIM4 Channels 1 и 2
     TIM4->CCER &= ~(TIM_CCER_CC1E | TIM_CCER_CC2E); // Выключить выходы каналов 1 и 2
