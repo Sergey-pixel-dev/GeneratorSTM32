@@ -220,8 +220,8 @@ void CheckParameters()
         StateParamsError = false;
         return;
     }
-
-    StateParamsError = !((INRequestNum > (MIN_DELAY + HERequestNum / 10 + 1)) && (INRequestNum <= 900) && (INRequestNum < 500000 / HZRequestNum) && (HERequestNum / 10 < SYNC_DELAY) && (LERequestNum / 10 < SYNC_DELAY));
+    // INRequestNum < 500000 / HZRequestNum --> 1/ HZRequstNum / 2 + 100/ половина периода + 100 мкс (почему 100? просто чутка рандомное число)
+    StateParamsError = !((INRequestNum > (MIN_DELAY + HERequestNum / 10 + 1)) && (INRequestNum <= 5400) && (INRequestNum <= 500000 / HZRequestNum + 100) && (HERequestNum / 10 < SYNC_DELAY) && (LERequestNum / 10 < SYNC_DELAY));
 }
 // Работа с памятью
 
@@ -263,7 +263,7 @@ void EraseProfile()
     INArray[0] = 1 + 48;
     INArray[1] = 0 + 48;
     INArray[2] = 0 + 48;
-    INArray[3] = 0;
+    INArray[3] = 0 + 48;
 
     for (uint8_t i = 0; i < 4; i++)
     {
@@ -341,9 +341,9 @@ void SetINandLE()
     {
 
         phtim4->Instance->CNT = 0;
-        phtim4->Instance->ARR = 72 * INRequestNum + 72 * (LERequestNum / 10) + fraction_ticks[LERequestNum % 10] - 1 - 72 * SYNC_DELAY + phtim2->Instance->CCR3;
-        phtim4->Instance->CCR1 = phtim4->Instance->ARR - 72 * (LERequestNum / 10) - fraction_ticks[LERequestNum % 10] - 1;
-        phtim4->Instance->CCR2 = phtim4->Instance->ARR - 72 * SYNC_DELAY;
+        phtim4->Instance->ARR = 12 * INRequestNum + 12 * (LERequestNum / 10) + LERequestNum % 10 - 1 - 12 * SYNC_DELAY + phtim2->Instance->CCR3 / 6;
+        phtim4->Instance->CCR1 = phtim4->Instance->ARR - 12 * (LERequestNum / 10) - LERequestNum % 10 - 1;
+        phtim4->Instance->CCR2 = phtim4->Instance->ARR - 12 * SYNC_DELAY;
         // TIM4->CCER |= (TIM_CCER_CC1E | TIM_CCER_CC2E);
     }
 }
@@ -448,7 +448,7 @@ void PrintScreen()
 
     ST7789_PrintStr(FIRST_POSITION, 167, "IN", 2, DefaultFontColor, BACKGROUND_COLOR, 0);
 
-    ST7789_PrintStr(SECOND_POSITION, 167, INArray, 3, DefaultFontColor, BACKGROUND_COLOR, 0);
+    ST7789_PrintStr(SECOND_POSITION, 167, INArray, 4, DefaultFontColor, BACKGROUND_COLOR, 0);
 
     ST7789_DrawRect(FIRST_POSITION + 8 + 55 * (Profile - 1) + 36, ROW_PROFILE - 18,
                     FIRST_POSITION + 8 + 55 * (Profile - 1) + 36 + 12, ROW_PROFILE - 8, WHITE);
@@ -607,7 +607,7 @@ void UpdateScreenPlaceNumber()
         ST7789_PrintCustomStr(SECOND_POSITION, 112, LEArray, 4, 3 - PlaceNumber, color, CURRENT_NUMBER_COLOR, bg, 0);
         break;
     case IN:
-        ST7789_PrintCustomStr(SECOND_POSITION, 167, INArray, 3, 2 - PlaceNumber, color, CURRENT_NUMBER_COLOR, bg, 0);
+        ST7789_PrintCustomStr(SECOND_POSITION, 167, INArray, 4, 3 - PlaceNumber, color, CURRENT_NUMBER_COLOR, bg, 0);
         break;
     case PROFILE:
     {
@@ -670,7 +670,7 @@ void foo2()
 
 void HandleButtonLeft(void)
 {
-    if (State == HZ)
+    if (State == HZ || State == IN)
     {
         if (PlaceNumber != 3)
             PlaceNumber++;
@@ -679,11 +679,6 @@ void HandleButtonLeft(void)
     {
         if (PlaceNumber != 3)
             PlaceNumber += !PlaceNumber ? 2 : 1;
-    }
-    else if (State == IN)
-    {
-        if (PlaceNumber != 2)
-            PlaceNumber++;
     }
     else
     {
@@ -771,8 +766,8 @@ void HandleButtonIncrease(void)
             LEArray[3 - PlaceNumber]++;
         break;
     case IN:
-        if (INArray[2 - PlaceNumber] < '9')
-            INArray[2 - PlaceNumber]++;
+        if (INArray[3 - PlaceNumber] < '9')
+            INArray[3 - PlaceNumber]++;
         break;
     }
     if (!ValueChanged && State != PROFILE)
@@ -804,8 +799,8 @@ void HandleButtonDecrease(void)
             LEArray[3 - PlaceNumber]--;
         break;
     case IN:
-        if (INArray[2 - PlaceNumber] > '0')
-            INArray[2 - PlaceNumber]--;
+        if (INArray[3 - PlaceNumber] > '0')
+            INArray[3 - PlaceNumber]--;
         break;
     }
     if (!ValueChanged && State != PROFILE)
@@ -822,14 +817,32 @@ void HandleButtonHalfIN(void)
 {
     if (State == IN)
     {
-        uint16_t in_new = 0;
         if (!ValueChanged && State != PROFILE)
         {
             ST7789_DrawRect(FIRST_POSITION + 8 + 55 * Profile + 36, ROW_PROFILE - 18,
                             FIRST_POSITION + 8 + 55 * Profile + 36 + 12, ROW_PROFILE - 8, CURRENT_PROFILE); // 36 = 6 * 6 (размер цифр * размер шрифта)
             ValueChanged = true;
         }
-        UpdateScreenPlaceNumber();
+        uint16_t hz = (500000 / HZRequestNum);
+        if (hz == 0xFFFF) // слишком дофига - переполнение
+        {
+            INArray[0] = 9;
+            INArray[1] = 9;
+            INArray[2] = 9;
+            INArray[3] = 9;
+        }
+        else
+        {
+            INArray[0] = hz / 1000 + 48;
+            hz %= 1000;
+            INArray[1] = hz / 100 + 48;
+            hz %= 100;
+            INArray[2] = hz / 10 + 48;
+            hz %= 10;
+            INArray[3] = hz + 48;
+        }
+        TryToSetStateParams();
+        UpdateScreenAfterUp();
     }
 }
 
@@ -853,8 +866,11 @@ void HandleButtonSave(void)
 }
 void HandleButtonErase(void)
 {
-    EraseProfile(Profile);
-    LoadParametersFromProfile();
-    PrintScreen();
-    SaveProfile();
+    if (State == PROFILE)
+    {
+        EraseProfile(Profile);
+        LoadParametersFromProfile();
+        PrintScreen();
+        SaveProfile();
+    }
 }

@@ -456,7 +456,7 @@ static void MX_TIM4_Init(void)
 
   /* USER CODE END TIM4_Init 1 */
   htim4.Instance = TIM4;
-  htim4.Init.Prescaler = 0;
+  htim4.Init.Prescaler = 5;
   htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim4.Init.Period = 3600;
   htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
@@ -624,7 +624,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
     if (GPIO_Pin == GPIO_PIN_13)
     {
-      if (GPIOC->IDR & GPIO_PIN_14)
+      if (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_14) == GPIO_PIN_RESET)
         HandleButtonHalfIN();
       else
         HandleButtonIncrease();

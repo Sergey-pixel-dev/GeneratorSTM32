@@ -20,7 +20,7 @@
 #define HZRequestNum ((FreqArray[0] - 48) * 1000 + (FreqArray[1] - 48) * 100 + (FreqArray[2] - 48) * 10 + (FreqArray[3] - 48))
 #define HERequestNum ((HEArray[0] - 48) * 100 + (HEArray[1] - 48) * 10 + (HEArray[3] - 48))
 #define LERequestNum ((LEArray[0] - 48) * 100 + (LEArray[1] - 48) * 10 + (LEArray[3] - 48))
-#define INRequestNum ((INArray[0] - 48) * 100 + (INArray[1] - 48) * 10 + (INArray[2] - 48))
+#define INRequestNum ((INArray[0] - 48) * 1000 + (INArray[1] - 48) * 100 + (INArray[2] - 48) * 10 + (INArray[0] - 48))
 // OTHER DEFENITION
 #define FIRST_POSITION 8
 #define SECOND_POSITION 98
