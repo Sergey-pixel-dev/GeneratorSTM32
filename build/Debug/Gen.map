@@ -392,7 +392,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
  .debug_macro   0x00000000       0x83 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
  .debug_line    0x00000000      0x5f1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
- .debug_str     0x00000000    0x847f6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
+ .debug_str     0x00000000    0x84803 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
  .comment       0x00000000       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
  .debug_frame   0x00000000       0x78 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
  .ARM.attributes
@@ -878,8 +878,8 @@ Discarded input sections
                 0x00000000       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .rodata.aPredivFactorTable.0
                 0x00000000        0x2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
- .debug_info    0x00000000      0x3c0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
- .debug_abbrev  0x00000000      0x188 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_info    0x00000000      0x3c6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_abbrev  0x00000000      0x186 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .debug_aranges
                 0x00000000       0x30 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .debug_rnglists
@@ -923,7 +923,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .debug_macro   0x00000000       0x83 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .debug_line    0x00000000      0x7a5 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
- .debug_str     0x00000000    0x84972 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_str     0x00000000    0x8497f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .comment       0x00000000       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .debug_frame   0x00000000       0x80 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .ARM.attributes
@@ -1124,7 +1124,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_macro   0x00000000       0x83 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_line    0x00000000      0xcb4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_str     0x00000000    0x84b9c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_str     0x00000000    0x84ba9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .comment       0x00000000       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_frame   0x00000000      0x208 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .ARM.attributes
@@ -1324,8 +1324,8 @@ Discarded input sections
                 0x00000000       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
  .text.HAL_PWR_PVDCallback
                 0x00000000        0xc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
- .debug_info    0x00000000      0x628 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
- .debug_abbrev  0x00000000      0x1f6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
+ .debug_info    0x00000000      0x630 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
+ .debug_abbrev  0x00000000      0x1f4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
  .debug_aranges
                 0x00000000       0xa8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
  .debug_rnglists
@@ -1369,7 +1369,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
  .debug_macro   0x00000000       0x83 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
  .debug_line    0x00000000      0x7dd cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
- .debug_str     0x00000000    0x84d2a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
+ .debug_str     0x00000000    0x84d37 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
  .comment       0x00000000       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
  .debug_frame   0x00000000      0x270 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
  .ARM.attributes
@@ -1488,7 +1488,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
  .debug_macro   0x00000000       0x83 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
  .debug_line    0x00000000      0x926 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
- .debug_str     0x00000000    0x84ace cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
+ .debug_str     0x00000000    0x84adb cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
  .comment       0x00000000       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
  .debug_frame   0x00000000      0x20c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
  .ARM.attributes
@@ -1610,7 +1610,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
  .debug_macro   0x00000000       0x83 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
  .debug_line    0x00000000      0xa14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
- .debug_str     0x00000000    0x84c7c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
+ .debug_str     0x00000000    0x84c89 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
  .comment       0x00000000       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
  .debug_frame   0x00000000      0x258 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
  .ARM.attributes
@@ -1718,7 +1718,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
  .debug_macro   0x00000000       0x83 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
  .debug_line    0x00000000      0x8a9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
- .debug_str     0x00000000    0x84975 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
+ .debug_str     0x00000000    0x84982 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
  .comment       0x00000000       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
  .debug_frame   0x00000000      0x174 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
  .ARM.attributes
@@ -3998,43 +3998,43 @@ LOAD /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_frame   0x00004028       0x90 CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
  .debug_frame   0x000040b8      0x4fc CMakeFiles/Gen.dir/Core/Src/core.c.obj
 
-.debug_info     0x00000000     0xf6dc
+.debug_info     0x00000000     0xf74e
  .debug_info    0x00000000      0x222 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_info    0x00000222     0x2524 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- .debug_info    0x00002746      0x704 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_info    0x00002e4a      0x7d5 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_info    0x0000361f      0x5ab cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_info    0x00003bca      0xa87 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_info    0x00004651     0x142d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_info    0x00005a7e     0x2959 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_info    0x000083d7     0x149b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_info    0x00009872     0x19c0 CMakeFiles/Gen.dir/Core/Src/main.c.obj
- .debug_info    0x0000b232      0x3cf CMakeFiles/Gen.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_info    0x0000b601     0x118c CMakeFiles/Gen.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x0000c78d       0x30 CMakeFiles/Gen.dir/startup_stm32f103xb.s.obj
- .debug_info    0x0000c7bd      0x1a0 CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
- .debug_info    0x0000c95d     0x1068 CMakeFiles/Gen.dir/Core/Lib/Src/st7789.c.obj
- .debug_info    0x0000d9c5      0x895 CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
- .debug_info    0x0000e25a     0x1482 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+ .debug_info    0x00002746      0x70b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_info    0x00002e51      0x7f0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_info    0x00003641      0x5ad cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_info    0x00003bee      0xa87 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_info    0x00004675     0x142d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_info    0x00005aa2     0x295d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_info    0x000083ff     0x14a0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_info    0x0000989f     0x19df CMakeFiles/Gen.dir/Core/Src/main.c.obj
+ .debug_info    0x0000b27e      0x3cd CMakeFiles/Gen.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_info    0x0000b64b     0x11a3 CMakeFiles/Gen.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x0000c7ee       0x30 CMakeFiles/Gen.dir/startup_stm32f103xb.s.obj
+ .debug_info    0x0000c81e      0x1a0 CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
+ .debug_info    0x0000c9be     0x106e CMakeFiles/Gen.dir/Core/Lib/Src/st7789.c.obj
+ .debug_info    0x0000da2c      0x895 CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
+ .debug_info    0x0000e2c1     0x148d CMakeFiles/Gen.dir/Core/Src/core.c.obj
 
-.debug_abbrev   0x00000000     0x264d
+.debug_abbrev   0x00000000     0x263c
  .debug_abbrev  0x00000000      0x13f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_abbrev  0x0000013f      0x2a3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- .debug_abbrev  0x000003e2      0x201 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_abbrev  0x000005e3      0x2b3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_abbrev  0x00000896      0x1ca cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_abbrev  0x00000a60      0x2f8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_abbrev  0x00000d58      0x27a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_abbrev  0x00000fd2      0x277 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_abbrev  0x00001249      0x282 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_abbrev  0x000014cb      0x3a5 CMakeFiles/Gen.dir/Core/Src/main.c.obj
- .debug_abbrev  0x00001870      0x1b6 CMakeFiles/Gen.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_abbrev  0x00001a26      0x255 CMakeFiles/Gen.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_abbrev  0x00001c7b       0x24 CMakeFiles/Gen.dir/startup_stm32f103xb.s.obj
- .debug_abbrev  0x00001c9f       0xf4 CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
- .debug_abbrev  0x00001d93      0x31b CMakeFiles/Gen.dir/Core/Lib/Src/st7789.c.obj
- .debug_abbrev  0x000020ae      0x19f CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
- .debug_abbrev  0x0000224d      0x400 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+ .debug_abbrev  0x000003e2      0x1ff cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_abbrev  0x000005e1      0x2b0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_abbrev  0x00000891      0x1c9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_abbrev  0x00000a5a      0x2f8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_abbrev  0x00000d52      0x27a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_abbrev  0x00000fcc      0x276 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_abbrev  0x00001242      0x281 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_abbrev  0x000014c3      0x3a2 CMakeFiles/Gen.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x00001865      0x1b7 CMakeFiles/Gen.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_abbrev  0x00001a1c      0x251 CMakeFiles/Gen.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_abbrev  0x00001c6d       0x24 CMakeFiles/Gen.dir/startup_stm32f103xb.s.obj
+ .debug_abbrev  0x00001c91       0xf4 CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
+ .debug_abbrev  0x00001d85      0x31a CMakeFiles/Gen.dir/Core/Lib/Src/st7789.c.obj
+ .debug_abbrev  0x0000209f      0x19f CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
+ .debug_abbrev  0x0000223e      0x3fe CMakeFiles/Gen.dir/Core/Src/core.c.obj
 
 .debug_aranges  0x00000000     0x1088
  .debug_aranges
@@ -4191,41 +4191,41 @@ LOAD /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_line    0x0000f91e      0x6b3 CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
  .debug_line    0x0000ffd1     0x1250 CMakeFiles/Gen.dir/Core/Src/core.c.obj
 
-.debug_str      0x00000000    0x8c2b7
- .debug_str     0x00000000    0x844b1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
-                              0x847f3 (size before relaxing)
- .debug_str     0x000844b1     0x1063 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-                              0x858ba (size before relaxing)
- .debug_str     0x00085514      0x63c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                              0x84f26 (size before relaxing)
- .debug_str     0x00085b50      0x39a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                              0x84c22 (size before relaxing)
- .debug_str     0x00085eea      0x380 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                              0x84b79 (size before relaxing)
- .debug_str     0x0008626a      0x2d5 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                              0x84e72 (size before relaxing)
- .debug_str     0x0008653f      0x72d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
-                              0x85119 (size before relaxing)
- .debug_str     0x00086c6c     0x1123 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                              0x85c24 (size before relaxing)
- .debug_str     0x00087d8f      0x523 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                              0x85430 (size before relaxing)
- .debug_str     0x000882b2      0xc1e CMakeFiles/Gen.dir/Core/Src/main.c.obj
-                              0x86584 (size before relaxing)
- .debug_str     0x00088ed0      0x159 CMakeFiles/Gen.dir/Core/Src/stm32f1xx_it.c.obj
-                              0x85264 (size before relaxing)
- .debug_str     0x00089029       0x53 CMakeFiles/Gen.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                              0x8554a (size before relaxing)
- .debug_str     0x0008907c       0x55 CMakeFiles/Gen.dir/startup_stm32f103xb.s.obj
+.debug_str      0x00000000    0x8c2c4
+ .debug_str     0x00000000    0x844be cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
+                              0x84800 (size before relaxing)
+ .debug_str     0x000844be     0x1063 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                              0x858c7 (size before relaxing)
+ .debug_str     0x00085521      0x63c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                              0x84f33 (size before relaxing)
+ .debug_str     0x00085b5d      0x39a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                              0x84c2f (size before relaxing)
+ .debug_str     0x00085ef7      0x380 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                              0x84b86 (size before relaxing)
+ .debug_str     0x00086277      0x2d5 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                              0x84e7f (size before relaxing)
+ .debug_str     0x0008654c      0x72d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                              0x85126 (size before relaxing)
+ .debug_str     0x00086c79     0x1123 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                              0x85c31 (size before relaxing)
+ .debug_str     0x00087d9c      0x523 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                              0x8543d (size before relaxing)
+ .debug_str     0x000882bf      0xc1e CMakeFiles/Gen.dir/Core/Src/main.c.obj
+                              0x86591 (size before relaxing)
+ .debug_str     0x00088edd      0x159 CMakeFiles/Gen.dir/Core/Src/stm32f1xx_it.c.obj
+                              0x85271 (size before relaxing)
+ .debug_str     0x00089036       0x53 CMakeFiles/Gen.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                              0x85557 (size before relaxing)
+ .debug_str     0x00089089       0x55 CMakeFiles/Gen.dir/startup_stm32f103xb.s.obj
                                  0x84 (size before relaxing)
- .debug_str     0x000890d1       0x73 CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
+ .debug_str     0x000890de       0x73 CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
                                0x3d46 (size before relaxing)
- .debug_str     0x00089144     0x2e27 CMakeFiles/Gen.dir/Core/Lib/Src/st7789.c.obj
-                              0x87fd6 (size before relaxing)
- .debug_str     0x0008bf6b      0x127 CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
-                              0x84d2e (size before relaxing)
- .debug_str     0x0008c092      0x225 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                              0x86020 (size before relaxing)
+ .debug_str     0x00089151     0x2e27 CMakeFiles/Gen.dir/Core/Lib/Src/st7789.c.obj
+                              0x87fe3 (size before relaxing)
+ .debug_str     0x0008bf78      0x127 CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
+                              0x84d3b (size before relaxing)
+ .debug_str     0x0008c09f      0x225 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                              0x8602d (size before relaxing)
 
 .debug_line_str
                 0x00000000       0x68

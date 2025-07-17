@@ -1,4 +1,4 @@
-{
+/* {
     "version": 4,
     "configurations": [
         {
@@ -10,8 +10,41 @@
                 "${workspaceFolder}/Core/Inc",
                 "${workspaceFolder}/Core/Lib/Inc",
                 "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc",
-                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+                "${workspaceFolder}/Drivers/CMSIS/Include"
             ]
+        }
+    ]
+} */
+{
+    "version": 4,
+    "configurations": [
+        {
+            "name": "STM32F103",
+            "compilerPath": "C:/Program Files (x86)/GNU Tools Arm Embedded/10 2020-q4-major/bin/arm-none-eabi-gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm",
+            "includePath": [
+                "${workspaceFolder}/Core/Inc",
+                "${workspaceFolder}/Core/Lib/Inc",
+                "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+                "${workspaceFolder}/Drivers/CMSIS/Include"
+            ],
+            "defines": [
+                "STM32F103xB",
+                "USE_HAL_DRIVER"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/Core/Inc",
+                    "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc",
+                    "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+                    "${workspaceFolder}/Drivers/CMSIS/Include"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ]
 }

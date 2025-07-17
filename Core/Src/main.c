@@ -578,33 +578,32 @@ static void MX_GPIO_Init(void)
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
   uint32_t current_tick = HAL_GetTick();
+  if (GPIO_Pin == GPIO_PIN_5)
+  {
+    if (current_tick - current_button_tick >= 3000 && button_flag)
+    {
+      // erase
+      HandleButtonErase();
+      button_flag = false;
+    }
+    else
+    {
+      // save
+      current_button_tick = current_tick;
+      button_flag = !button_flag;
+      if (StateLoadError || StateParamsError)
+        return;
+      if (button_flag)
+        HandleButtonSave();
+    }
+  }
+
   // Защита от дребезга контактов кнопок
   if ((current_tick - last_tick) > DEBOUNCE_DELAY)
   {
     last_tick = current_tick;
 
     // Обработка сохранения и сброса профиля
-
-    if (GPIO_Pin == GPIO_PIN_5)
-    {
-      if (current_tick - current_button_tick >= 3000 && button_flag)
-      {
-        // erase
-        HandleButtonErase();
-        button_flag = false;
-      }
-      else
-      {
-        // save
-        current_button_tick = current_tick;
-        button_flag = !button_flag;
-        if (StateLoadError || StateParamsError)
-          return;
-        if (button_flag)
-          HandleButtonSave();
-      }
-      /*  */
-    }
     if (StateLoadError)
       return;
     // Обработка кнопок изменения значения и влево-вправо
@@ -625,14 +624,16 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
     if (GPIO_Pin == GPIO_PIN_13)
     {
-      HandleButtonIncrease();
+      if (GPIOC->IDR & GPIO_PIN_14)
+        HandleButtonHalfIN();
+      else
+        HandleButtonIncrease();
 
       return;
     }
     if (GPIO_Pin == GPIO_PIN_14)
     {
       HandleButtonDecrease();
-
       return;
     }
     /* if (StateParamsError && !IsExternalSource)

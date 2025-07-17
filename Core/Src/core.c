@@ -1,6 +1,4 @@
 #include "core.h"
-// ЕСЛИ ПАМЯТИ НЕТ И будет сброс профиля, то он никак не проверяет резултат сброса
-// да и вообще добавь проверки корректного чтения с памяти и т.д.
 uint8_t ParametersBuffer[16];
 bool StateParamsError = false;
 bool StateLoadError = false;
@@ -341,6 +339,7 @@ void SetINandLE()
     }
     else
     {
+
         phtim4->Instance->CNT = 0;
         phtim4->Instance->ARR = 72 * INRequestNum + 72 * (LERequestNum / 10) + fraction_ticks[LERequestNum % 10] - 1 - 72 * SYNC_DELAY + phtim2->Instance->CCR3;
         phtim4->Instance->CCR1 = phtim4->Instance->ARR - 72 * (LERequestNum / 10) - fraction_ticks[LERequestNum % 10] - 1;
@@ -818,6 +817,22 @@ void HandleButtonDecrease(void)
     TryToSetStateParams();
     UpdateScreenPlaceNumber();
 }
+
+void HandleButtonHalfIN(void)
+{
+    if (State == IN)
+    {
+        uint16_t in_new = 0;
+        if (!ValueChanged && State != PROFILE)
+        {
+            ST7789_DrawRect(FIRST_POSITION + 8 + 55 * Profile + 36, ROW_PROFILE - 18,
+                            FIRST_POSITION + 8 + 55 * Profile + 36 + 12, ROW_PROFILE - 8, CURRENT_PROFILE); // 36 = 6 * 6 (размер цифр * размер шрифта)
+            ValueChanged = true;
+        }
+        UpdateScreenPlaceNumber();
+    }
+}
+
 void HandleButtonSave(void)
 {
     // Действие при нажатии кнопки "сохранить" (PC15)
@@ -836,7 +851,6 @@ void HandleButtonSave(void)
         ValueChanged = false;
     }
 }
-
 void HandleButtonErase(void)
 {
     EraseProfile(Profile);

@@ -89,4 +89,5 @@ void HandleButtonIncrease(void);
 void HandleButtonDecrease(void);
 void HandleButtonSave(void);
 void HandleButtonErase(void);
+void HandleButtonHalfIN(void);
 #endif
