@@ -823,26 +823,21 @@ void HandleButtonHalfIN(void)
                             FIRST_POSITION + 8 + 55 * Profile + 36 + 12, ROW_PROFILE - 8, CURRENT_PROFILE); // 36 = 6 * 6 (размер цифр * размер шрифта)
             ValueChanged = true;
         }
-        uint16_t hz = (500000 / HZRequestNum);
-        if (hz == 0xFFFF) // слишком дофига - переполнение
-        {
-            INArray[0] = 9;
-            INArray[1] = 9;
-            INArray[2] = 9;
-            INArray[3] = 9;
-        }
-        else
-        {
-            INArray[0] = hz / 1000 + 48;
-            hz %= 1000;
-            INArray[1] = hz / 100 + 48;
-            hz %= 100;
-            INArray[2] = hz / 10 + 48;
-            hz %= 10;
-            INArray[3] = hz + 48;
-        }
+        if (HZRequestNum <= 95)
+            return;
+
+        uint32_t hz = (500000 / HZRequestNum);
+        INArray[0] = hz / 1000 + 48;
+        hz %= 1000;
+        INArray[1] = hz / 100 + 48;
+        hz %= 100;
+        INArray[2] = hz / 10 + 48;
+        hz %= 10;
+        INArray[3] = hz + 48;
+
         TryToSetStateParams();
         UpdateScreenAfterUp();
+        UpdateScreenPlaceNumber();
     }
 }
 
