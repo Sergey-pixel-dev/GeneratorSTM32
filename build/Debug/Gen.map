@@ -3208,7 +3208,7 @@ LOAD /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
                 0x08000000                g_pfnVectors
                 0x0800010c                        . = ALIGN (0x4)
 
-.text           0x0800010c     0x6d18
+.text           0x0800010c     0x6c74
                 0x0800010c                        . = ALIGN (0x4)
  *(.text)
  .text          0x0800010c       0x40 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
@@ -3606,160 +3606,160 @@ LOAD /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .text.SetStateParameters
                 0x080054d8       0x44 CMakeFiles/Gen.dir/Core/Src/core.c.obj
                 0x080054d8                SetStateParameters
- .text.SetHZ    0x0800551c      0x174 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+ .text.SetHZ    0x0800551c      0x100 CMakeFiles/Gen.dir/Core/Src/core.c.obj
                 0x0800551c                SetHZ
- .text.SetHE    0x08005690       0xec CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08005690                SetHE
+ .text.SetHE    0x0800561c       0xc0 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x0800561c                SetHE
  .text.SetINandLE
-                0x0800577c      0x1e0 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x0800577c                SetINandLE
+                0x080056dc      0x1dc CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x080056dc                SetINandLE
  .text.TryToSetStateParams
-                0x0800595c       0x64 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x0800595c                TryToSetStateParams
+                0x080058b8       0x64 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x080058b8                TryToSetStateParams
  .text.SetTimers
-                0x080059c0       0x14 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x080059c0                SetTimers
+                0x0800591c       0x14 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x0800591c                SetTimers
  .text.LaunchTimers
-                0x080059d4      0x120 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x080059d4                LaunchTimers
+                0x08005930      0x120 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x08005930                LaunchTimers
  .text.StopTimers
-                0x08005af4       0x64 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08005af4                StopTimers
+                0x08005a50       0x64 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x08005a50                StopTimers
  .text.PrintScreen
-                0x08005b58      0x180 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08005b58                PrintScreen
+                0x08005ab4      0x180 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x08005ab4                PrintScreen
  .text.UpdateScreenAfterUp
-                0x08005cd8      0x3a4 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08005cd8                UpdateScreenAfterUp
+                0x08005c34      0x3a4 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x08005c34                UpdateScreenAfterUp
  .text.UpdateScreenAfterDown
-                0x0800607c      0x300 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x0800607c                UpdateScreenAfterDown
+                0x08005fd8      0x300 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x08005fd8                UpdateScreenAfterDown
  .text.UpdateScreenPlaceNumber
-                0x0800637c      0x234 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x0800637c                UpdateScreenPlaceNumber
+                0x080062d8      0x234 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x080062d8                UpdateScreenPlaceNumber
  .text.UpdateHZScreen
-                0x080065b0       0x58 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x080065b0                UpdateHZScreen
- .text.foo1     0x08006608       0x80 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08006608                foo1
- .text.foo2     0x08006688       0x5c CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08006688                foo2
+                0x0800650c       0x58 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x0800650c                UpdateHZScreen
+ .text.foo1     0x08006564       0x80 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x08006564                foo1
+ .text.foo2     0x080065e4       0x5c CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x080065e4                foo2
  .text.HandleButtonLeft
-                0x080066e4       0x90 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x080066e4                HandleButtonLeft
+                0x08006640       0x90 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x08006640                HandleButtonLeft
  .text.HandleButtonRight
-                0x08006774       0x90 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08006774                HandleButtonRight
+                0x080066d0       0x90 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x080066d0                HandleButtonRight
  .text.HandleButtonUp
-                0x08006804       0x5c CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08006804                HandleButtonUp
+                0x08006760       0x5c CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x08006760                HandleButtonUp
  .text.HandleButtonDown
-                0x08006860       0x34 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08006860                HandleButtonDown
+                0x080067bc       0x34 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x080067bc                HandleButtonDown
  .text.HandleButtonIncrease
-                0x08006894      0x15c CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08006894                HandleButtonIncrease
+                0x080067f0      0x15c CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x080067f0                HandleButtonIncrease
  .text.HandleButtonDecrease
-                0x080069f0      0x15c CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x080069f0                HandleButtonDecrease
+                0x0800694c      0x15c CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x0800694c                HandleButtonDecrease
  .text.HandleButtonHalfIN
-                0x08006b4c      0x1a0 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08006b4c                HandleButtonHalfIN
+                0x08006aa8      0x1a0 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x08006aa8                HandleButtonHalfIN
  .text.HandleButtonSave
-                0x08006cec       0xf0 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08006cec                HandleButtonSave
+                0x08006c48       0xf0 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x08006c48                HandleButtonSave
  .text.HandleButtonErase
-                0x08006ddc       0x30 CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08006ddc                HandleButtonErase
+                0x08006d38       0x30 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x08006d38                HandleButtonErase
  *(.glue_7)
- .glue_7        0x08006e0c        0x0 linker stubs
+ .glue_7        0x08006d68        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08006e0c        0x0 linker stubs
+ .glue_7t       0x08006d68        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08006e0c        0x0 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x08006d68        0x0 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x08006e0c        0x4 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
-                0x08006e0c                _init
- .init          0x08006e10        0x8 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x08006d68        0x4 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
+                0x08006d68                _init
+ .init          0x08006d6c        0x8 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x08006e18        0x4 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
-                0x08006e18                _fini
- .fini          0x08006e1c        0x8 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
-                0x08006e24                        . = ALIGN (0x4)
-                0x08006e24                        _etext = .
+ .fini          0x08006d74        0x4 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
+                0x08006d74                _fini
+ .fini          0x08006d78        0x8 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+                0x08006d80                        . = ALIGN (0x4)
+                0x08006d80                        _etext = .
 
-.vfp11_veneer   0x08006e24        0x0
- .vfp11_veneer  0x08006e24        0x0 linker stubs
+.vfp11_veneer   0x08006d80        0x0
+ .vfp11_veneer  0x08006d80        0x0 linker stubs
 
-.v4_bx          0x08006e24        0x0
- .v4_bx         0x08006e24        0x0 linker stubs
+.v4_bx          0x08006d80        0x0
+ .v4_bx         0x08006d80        0x0 linker stubs
 
-.iplt           0x08006e24        0x0
- .iplt          0x08006e24        0x0 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x08006d80        0x0
+ .iplt          0x08006d80        0x0 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x08006e24      0x468
-                0x08006e24                        . = ALIGN (0x4)
+.rodata         0x08006d80      0x468
+                0x08006d80                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08006e24       0x26 CMakeFiles/Gen.dir/Core/Lib/Src/st7789.c.obj
- *fill*         0x08006e4a        0x2 
- .rodata        0x08006e4c       0x3a CMakeFiles/Gen.dir/Core/Src/core.c.obj
+ .rodata        0x08006d80       0x26 CMakeFiles/Gen.dir/Core/Lib/Src/st7789.c.obj
+ *fill*         0x08006da6        0x2 
+ .rodata        0x08006da8       0x3a CMakeFiles/Gen.dir/Core/Src/core.c.obj
  *(.rodata*)
- *fill*         0x08006e86        0x2 
+ *fill*         0x08006de2        0x2 
  .rodata.AHBPrescTable
-                0x08006e88       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
-                0x08006e88                AHBPrescTable
+                0x08006de4       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
+                0x08006de4                AHBPrescTable
  .rodata.APBPrescTable
-                0x08006e98        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
-                0x08006e98                APBPrescTable
+                0x08006df4        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
+                0x08006df4                APBPrescTable
  .rodata.aPLLMULFactorTable.1
-                0x08006ea0       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08006dfc       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .rodata.aPredivFactorTable.0
-                0x08006eb0        0x2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x08006eb2        0x2 
+                0x08006e0c        0x2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x08006e0e        0x2 
  .rodata.FONT_DATA
-                0x08006eb4      0x28c CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
-                0x08006eb4                FONT_DATA
+                0x08006e10      0x28c CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
+                0x08006e10                FONT_DATA
  .rodata.FONT_CHAR_INFO
-                0x08007140      0x140 CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
-                0x08007140                FONT_CHAR_INFO
+                0x0800709c      0x140 CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
+                0x0800709c                FONT_CHAR_INFO
  .rodata.fraction_ticks
-                0x08007280        0xa CMakeFiles/Gen.dir/Core/Src/core.c.obj
-                0x08007280                fraction_ticks
-                0x0800728c                        . = ALIGN (0x4)
- *fill*         0x0800728a        0x2 
+                0x080071dc        0xa CMakeFiles/Gen.dir/Core/Src/core.c.obj
+                0x080071dc                fraction_ticks
+                0x080071e8                        . = ALIGN (0x4)
+ *fill*         0x080071e6        0x2 
 
-.rel.dyn        0x0800728c        0x0
- .rel.iplt      0x0800728c        0x0 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x080071e8        0x0
+ .rel.iplt      0x080071e8        0x0 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0800728c        0x0
-                0x0800728c                        __exidx_start = .
+.ARM            0x080071e8        0x0
+                0x080071e8                        __exidx_start = .
  *(.ARM.exidx*)
-                0x0800728c                        __exidx_end = .
+                0x080071e8                        __exidx_end = .
 
-.preinit_array  0x0800728c        0x0
-                0x0800728c                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080071e8        0x0
+                0x080071e8                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800728c                        PROVIDE (__preinit_array_end = .)
+                0x080071e8                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0800728c        0x4
-                0x0800728c                        PROVIDE (__init_array_start = .)
+.init_array     0x080071e8        0x4
+                0x080071e8                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0800728c        0x4 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x08007290                        PROVIDE (__init_array_end = .)
+ .init_array    0x080071e8        0x4 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x080071ec                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x08007290        0x4
+.fini_array     0x080071ec        0x4
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08007290        0x4 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+ .fini_array    0x080071ec        0x4 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x08007294                        _sidata = LOADADDR (.data)
+                0x080071f0                        _sidata = LOADADDR (.data)
 
-.data           0x20000000        0xc load address 0x08007294
+.data           0x20000000        0xc load address 0x080071f0
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -3781,11 +3781,11 @@ LOAD /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  *fill*         0x2000000b        0x1 
                 0x2000000c                        _edata = .
 
-.igot.plt       0x2000000c        0x0 load address 0x080072a0
+.igot.plt       0x2000000c        0x0 load address 0x080071fc
  .igot.plt      0x2000000c        0x0 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x2000000c                        . = ALIGN (0x4)
 
-.bss            0x2000000c      0x260 load address 0x080072a0
+.bss            0x2000000c      0x260 load address 0x080071fc
                 0x2000000c                        _sbss = .
                 0x2000000c                        __bss_start__ = _sbss
  *(.bss)
@@ -3894,7 +3894,7 @@ LOAD /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
                 0x2000026c                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x2000026c      0x604 load address 0x080072a0
+                0x2000026c      0x604 load address 0x080071fc
                 0x20000270                        . = ALIGN (0x8)
  *fill*         0x2000026c        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -3981,7 +3981,7 @@ LOAD /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .comment       0x00000043       0x44 CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
  .comment       0x00000043       0x44 CMakeFiles/Gen.dir/Core/Src/core.c.obj
 
-.debug_frame    0x00000000     0x45dc
+.debug_frame    0x00000000     0x45f4
  .debug_frame   0x00000000       0x20 /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
  .debug_frame   0x00000020       0x2c /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-init.o)
  .debug_frame   0x0000004c       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
@@ -3999,9 +3999,9 @@ LOAD /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_frame   0x00003cd8       0x5c CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
  .debug_frame   0x00003d34      0x2f4 CMakeFiles/Gen.dir/Core/Lib/Src/st7789.c.obj
  .debug_frame   0x00004028       0x90 CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
- .debug_frame   0x000040b8      0x524 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+ .debug_frame   0x000040b8      0x53c CMakeFiles/Gen.dir/Core/Src/core.c.obj
 
-.debug_info     0x00000000     0xf780
+.debug_info     0x00000000     0xf7d5
  .debug_info    0x00000000      0x222 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_info    0x00000222     0x2524 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .debug_info    0x00002746      0x70b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
@@ -4018,9 +4018,9 @@ LOAD /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_info    0x0000c824      0x1a0 CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
  .debug_info    0x0000c9c4     0x106e CMakeFiles/Gen.dir/Core/Lib/Src/st7789.c.obj
  .debug_info    0x0000da32      0x895 CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
- .debug_info    0x0000e2c7     0x14b9 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+ .debug_info    0x0000e2c7     0x150e CMakeFiles/Gen.dir/Core/Src/core.c.obj
 
-.debug_abbrev   0x00000000     0x263e
+.debug_abbrev   0x00000000     0x265b
  .debug_abbrev  0x00000000      0x13f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_abbrev  0x0000013f      0x2a3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .debug_abbrev  0x000003e2      0x1ff cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
@@ -4037,7 +4037,7 @@ LOAD /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_abbrev  0x00001c91       0xf4 CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
  .debug_abbrev  0x00001d85      0x31a CMakeFiles/Gen.dir/Core/Lib/Src/st7789.c.obj
  .debug_abbrev  0x0000209f      0x19f CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
- .debug_abbrev  0x0000223e      0x400 CMakeFiles/Gen.dir/Core/Src/core.c.obj
+ .debug_abbrev  0x0000223e      0x41d CMakeFiles/Gen.dir/Core/Src/core.c.obj
 
 .debug_aranges  0x00000000     0x1090
  .debug_aranges
@@ -4175,7 +4175,7 @@ LOAD /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_macro   0x0001759d      0x1b7 CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
  .debug_macro   0x00017754      0x1f1 CMakeFiles/Gen.dir/Core/Src/core.c.obj
 
-.debug_line     0x00000000    0x112ac
+.debug_line     0x00000000    0x11297
  .debug_line    0x00000000      0x62e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_line    0x0000062e     0x3af8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .debug_line    0x00004126      0x85b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
@@ -4192,7 +4192,7 @@ LOAD /home/serg50012/stm/CubeCTL/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_line    0x0000ea14      0x2b7 CMakeFiles/Gen.dir/Core/Lib/Src/fonts.c.obj
  .debug_line    0x0000eccb      0xc63 CMakeFiles/Gen.dir/Core/Lib/Src/st7789.c.obj
  .debug_line    0x0000f92e      0x6b3 CMakeFiles/Gen.dir/Core/Lib/Src/eeprom.c.obj
- .debug_line    0x0000ffe1     0x12cb CMakeFiles/Gen.dir/Core/Src/core.c.obj
+ .debug_line    0x0000ffe1     0x12b6 CMakeFiles/Gen.dir/Core/Src/core.c.obj
 
 .debug_str      0x00000000    0x8c2f2
  .debug_str     0x00000000    0x844be cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj

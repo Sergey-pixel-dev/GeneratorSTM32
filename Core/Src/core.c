@@ -302,7 +302,8 @@ void SetStateParameters()
 }
 void SetHZ()
 {
-    if (HZRequestNum == 0)
+    uint16_t hz = HZRequestNum;
+    if (hz == 0)
     {
         TIM1->CR1 &= ~TIM_CR1_CEN;
         TIM1->CCER &= ~TIM_CCER_CC2E;
@@ -310,41 +311,41 @@ void SetHZ()
     else
     {
         phtim1->Instance->CNT = 0;
-        phtim1->Instance->PSC = 1099 / HZRequestNum;
-        phtim1->Instance->ARR = (72 * 1000000 / (1099 / HZRequestNum + 1)) / HZRequestNum;
+        phtim1->Instance->PSC = 1099 / hz;
+        phtim1->Instance->ARR = (72 * 1000000 / (1099 / hz + 1)) / hz;
         phtim1->Instance->CCR2 = phtim1->Instance->ARR / 2;
-        // TIM1->CCER |= TIM_CCER_CC2E;
         TIM1->CR1 |= TIM_CR1_CEN;
         TIM1->BDTR |= TIM_BDTR_MOE;
     }
 }
 void SetHE()
 {
-    if (HERequestNum == 0)
+    uint16_t he = HERequestNum;
+    if (he == 0)
     {
         TIM2->CCER &= ~(TIM_CCER_CC1E | TIM_CCER_CC2E);
     }
     else
     {
         phtim2->Instance->CNT = 0;
-        phtim2->Instance->CCR3 = 72 * SYNC_DELAY - 72 * (HERequestNum / 10) - fraction_ticks[HERequestNum % 10];
-        // TIM2->CCER |= (TIM_CCER_CC1E | TIM_CCER_CC2E);
+        phtim2->Instance->CCR3 = 72 * SYNC_DELAY - 72 * (he / 10) - fraction_ticks[he % 10];
     }
 }
 void SetINandLE()
 {
-    if (LERequestNum == 0)
+    uint16_t le = LERequestNum;
+    uint16_t he = HERequestNum;
+    uint16_t in = INRequestNum;
+    if (le == 0)
     {
         TIM4->CCER &= ~(TIM_CCER_CC1E | TIM_CCER_CC2E);
     }
     else
     {
-
         phtim4->Instance->CNT = 0;
-        phtim4->Instance->ARR = 12 * INRequestNum + 12 * (LERequestNum / 10) + LERequestNum % 10 - 1 - 12 * SYNC_DELAY + phtim2->Instance->CCR3 / 6;
-        phtim4->Instance->CCR1 = phtim4->Instance->ARR - 12 * (LERequestNum / 10) - LERequestNum % 10 - 1;
+        phtim4->Instance->ARR = 12 * in + 12 * (le / 10) + le % 10 - 12 * (he / 10) - he % 10 - 1;
+        phtim4->Instance->CCR1 = phtim4->Instance->ARR - 12 * (le / 10) - le % 10;
         phtim4->Instance->CCR2 = phtim4->Instance->ARR - 12 * SYNC_DELAY;
-        // TIM4->CCER |= (TIM_CCER_CC1E | TIM_CCER_CC2E);
     }
 }
 void TryToSetStateParams()
