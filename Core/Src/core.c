@@ -10,8 +10,8 @@ uint8_t FreqArray[4];
 uint8_t HEArray[4];
 uint8_t LEArray[4];
 uint8_t INArray[4];
-const uint8_t fraction_ticks[10] = {0, 7, 14, 22, 29, 36, 43, 50, 58, 65};
-
+const uint8_t fraction_ticks72[10] = {0, 7, 14, 22, 29, 36, 43, 50, 58, 65};
+const uint8_t fraction_ticks12[10] = {0, 1, 2, 4, 5, 6, 7, 8, 11};
 uint8_t PlaceNumber;
 uint8_t LastPlaceNumber;
 
@@ -328,7 +328,7 @@ void SetHE()
     else
     {
         phtim2->Instance->CNT = 0;
-        phtim2->Instance->CCR3 = 72 * SYNC_DELAY - 72 * (he / 10) - fraction_ticks[he % 10];
+        phtim2->Instance->CCR3 = 72 * SYNC_DELAY - 72 * (he / 10) - fraction_ticks72[he % 10];
     }
 }
 void SetINandLE()
@@ -344,7 +344,7 @@ void SetINandLE()
     {
         phtim4->Instance->CNT = 0;
         phtim4->Instance->ARR = 12 * in + 12 * (le / 10) + le % 10 - 12 * (he / 10) - he % 10 - 1;
-        phtim4->Instance->CCR1 = phtim4->Instance->ARR - 12 * (le / 10) - le % 10;
+        phtim4->Instance->CCR1 = phtim4->Instance->ARR - 12 * (le / 10) - fraction_ticks12[le % 10];
         phtim4->Instance->CCR2 = phtim4->Instance->ARR - 12 * SYNC_DELAY;
     }
 }
